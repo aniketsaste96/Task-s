@@ -1,0 +1,60 @@
+Use the rest countries API url -> https://restcountries.eu/rest/v2/all and display all the country flags in console
+----------------------------------------------------------
+
+///Set up Http Request
+var xhr = new XMLHttpRequest();
+
+//create and send Get request
+//GET,POST,PUT,DELETE,
+// Second =>ENdpoint of the url:server url
+xhr.open("GET", "https://restcountries.com/v3.1/all");
+// set up our listener to process the request
+xhr.onload = function () {
+  //process the request and server will return the data
+  if (xhr.status >= 200 && xhr.status < 300) {
+    var t = JSON.parse(this.response);
+    //  console.log(t)
+for(var i =0;i<t.length;i++){
+  console.log( `
+  name:${t[i].name.common}
+  flag:${t[i].flag}
+
+  
+  `);
+  
+}
+   
+ 
+    //it should not give you data
+    // console.log("Data is not available");
+    
+  }
+};
+
+xhr.send();
+------------------------------------------
+name:Malaysia
+  flag:🇲🇾
+
+  
+  
+
+  name:Haiti
+  flag:🇭🇹
+
+  
+  
+
+  name:Tajikistan
+  flag:🇹🇯
+
+  
+  
+
+  name:American Samoa
+  flag:🇦🇸
+
+etc
+
+
+

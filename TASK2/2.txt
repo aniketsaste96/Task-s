@@ -1,0 +1,67 @@
+Use the same rest countries and print all countries name, region, sub region and population
+
+--------------------------------------------------------
+
+///Set up Http Request
+var xhr = new XMLHttpRequest();
+
+//create and send Get request
+//GET,POST,PUT,DELETE,
+// Second =>ENdpoint of the url:server url
+xhr.open("GET", "https://restcountries.com/v3.1/all");
+// set up our listener to process the request
+xhr.onload = function () {
+  //process the request and server will return the data
+  if (xhr.status >= 200 && xhr.status < 300) {
+    var t = JSON.parse(this.response);
+    //  console.log(t)
+for(var i =0;i<t.length;i++){
+  console.log( `
+  name:${t[i].name.common}
+  region:${t[i].region}
+  subregion:${t[i].subregion}
+  Population:${t[i].population}
+
+
+
+  
+  `);
+  
+}
+   
+ 
+    //it should not give you data
+    // console.log("Data is not available");
+    
+  }
+};
+
+xhr.send();
+
+-------------------------------------------------------------------------------
+  name:Malaysia
+  region:Asia
+  subregion:South-Eastern Asia
+  Population:32365998
+
+
+
+  
+  
+
+  name:Haiti
+  region:Americas
+  subregion:Caribbean
+  Population:11402533
+
+
+
+  
+  
+
+  name:Tajikistan
+  region:Asia
+  subregion:Central Asia
+  Population:9537642
+
+.....................etc
