@@ -1,0 +1,32 @@
+Use for/for in/forEach/for of
+
+
+var obj = [
+  { person1: "Name 1", age: "2", company: "GUVI" },
+  { person2: "Name 2", age: "5", company: "GUVI geek" },
+  { person3: "Name 3", age: "8", company: "GUVI geek network" },
+];
+
+//for
+/* for(let i=0;i<obj.length;i++){
+  console.log(obj[i])
+} */
+
+//for in
+/* var x;
+for(x in obj){
+  console.log(obj[x]);
+} */
+
+//for of
+
+
+/* for(let x of obj){
+  console.log(x);
+} */
+
+//for each
+obj.forEach(myObj)
+  function myObj(item){
+     console.log(item);     
+  }

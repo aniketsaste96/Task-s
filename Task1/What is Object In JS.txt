@@ -1,0 +1,16 @@
+>Object in javascript is defined as unordered collection of related data,of primitve or referance types in the 
+	form of "Key:Value" pairs. These keys can be variables or function and are called properties and methods,respectively in the conext of an object.
+>Most important datatype and form the building blocks of modern javascript.
+>Quit different from primitive data types because each these datatypes store single value each.
+>Objects are more complex and each object may contain any of primitive or all of them.
+>An objet is referance data type.
+>Eg.If object is Student it will have properties like nmae,age,addres,id etc.
+>In real life, a car is an object.
+A car has properties like weight and color, and methods like start and stop:
+  Eg>  const car = {type:"BMW", model:"500", color:"white"};
+                 = key:pairs
+
+Object and properties :-
+	>A js has properties associted with it.
+	>You can access properties with simple dot(.) notation.
+	>Eg ObjecName.propertieyName
