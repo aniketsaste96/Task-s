@@ -1,0 +1,44 @@
+User Interaface(UI) = Everything we see but can't manipulate it. Is the point at which user interact with a website or application.
+Browser Engine = Work as mediator between UI and rendering engine.
+Rendering Engine = Parse the CSS + HTML +JavaScript.
+
+Basci rendering Engine Flow = Parsing>>Render>>Tree>>Layout>>Paint
+
+Parsing =
+	>Conventional === CSS +JS
+	>Unconventional === HTML
+	> Translate a Document into a structure that code can use.Parser Constatly request token from Lexer in respose Lexer replay with token.
+tokens =
+	> Are small elements that parser can use.
+
+DOM tree=
+	>Is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document.
+
+Render Tree =
+	> Is generated while DOM tree is constructed/Visual elements in order they are going to displayed.
+		>Elements in render tree is called renderer or render Object.
+		>Render object is rectangle.
+
+Readyly available parse = >Flex
+			  >Lex
+		          >Yacc
+			  >Bison
+
+Layout=	>Called reflow in mozilla browser.
+	>calculated position adn size.
+
+Dirty Bit system =
+	>Make sure that browser don't need to do full layout on every time.
+
+Paint = 
+	>Used to display content on the page.
+
+Painting Order =
+	>Background color
+	>Background image
+	>Border
+	>Children
+	>Outline
+
+How browser Work in Background === >>Geckoreflow<<
+ 
