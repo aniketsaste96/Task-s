@@ -1,0 +1,59 @@
+/*Write a “person” class to hold all the details.*/
+
+
+
+class Person{
+constructor(Name,Age,Address,Education,Work,MaritalStatus){
+    this.Name = Name;
+    this.Age = Age;
+    this.Address = Address;
+    this.Education =Education;
+    this.Work = Work;
+    this.MaritalStatus = MaritalStatus;
+}
+
+
+}
+
+
+
+ Rohan = new Person('Rohan',50,{City:"Mumbai",State:"MH"},{Graduated:"True",CollageName:"IIT Bombay",YearOfpassing:1990},{Company:"TCS",Designation:"General Manager",Salary:"25 lakh/Annum"},'Married');
+
+console.log(Rohan);
+
+/*-----------------------------------------------------------
+
+o/p
+Object { Name: "Rohan", Age: 50, Address: {…}, Education: {…}, Work: {…}, MaritalStatus: "Married" }
+​
+Address: Object { City: "Mumbai", State: "MH" }
+​​
+City: "Mumbai"
+​​
+State: "MH"
+​​
+<prototype>: Object { … }
+​
+Age: 50
+​
+Education: Object { Graduated: "True", CollageName: "IIT Bombay", YearOfpassing: 1990 }
+​​
+CollageName: "IIT Bombay"
+​​
+Graduated: "True"
+​​
+YearOfpassing: 1990
+​​
+<prototype>: Object { … }
+​
+MaritalStatus: "Married"
+​
+Name: "Rohan"
+​
+Work: Object { Company: "TCS", Designation: "General Manager", Salary: "25 lakh/Annum" }
+​​
+Company: "TCS"
+​​
+Designation: "General Manager"
+​​
+Salary: "25 lakh/Annum"*/
