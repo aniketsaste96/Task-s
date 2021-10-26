@@ -1,0 +1,23 @@
+
+/*write a class to calculate uber price.*/
+
+class Uber{
+  constructor(PickUp,Dropping,DistaceinKM){
+    this.PickUp =PickUp;
+    this.Dropping = Dropping;
+    this.DistaceinKM =DistaceinKM;
+
+  }
+  getPrice(){
+    return `Uber Ride between ${this.PickUp} and ${this.Dropping} costs ${this.DistaceinKM * 5} Rupees`;  //Rs 5 per Km
+  }
+}
+
+
+
+letsRideUber = new Uber('Mumbai','Pune',148);
+
+console.log(letsRideUber.getPrice());
+
+/*O/P-----------------------
+Uber Ride between Mumbai and Pune costs 740 Rupees.*/
