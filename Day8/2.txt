@@ -1,0 +1,77 @@
+/*Convert the UML diagram to Typescript class. - use number for double
+https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md*/
+
+
+class Circle{
+  constructor(radius,color){
+    this.radius = radius.toFixed(1);
+    this.color = color;
+
+
+
+  }
+
+  circle(){
+
+  return this.circle(); 
+  }
+
+  circle(){
+    return this.radius +' '+ this.color;
+
+  }
+  getRadius(){
+     return this.radius;
+  }
+  getcolor(){
+    return this.color;
+  }
+  getCircumferance(){
+    return  (this.radius * 2 * 3.14);
+  }
+  toString(){
+    return this.color.toString();
+  }
+  getArea(){
+    return (this.radius * this.radius) * 3.14;
+  }
+  setcolor(){
+    return this.setcolor;
+  }
+  
+}
+
+
+getCircle = new Circle(parseFloat(1.0),"red");
+console.log(getCircle);
+
+console.log(getCircle.getRadius());
+console.log(getCircle.getcolor());
+console.log(getCircle.getCircumferance());
+console.log(getCircle.toString());
+console.log(getCircle.getArea());
+console.log(getCircle.circle());
+console.log(getCircle.setRadius());
+
+
+
+/*o/p-----------------------------
+Object { radius: "1.0", color: "red" }
+​
+color: "red"
+​
+radius: "1.0"
+​
+<prototype>: Object { … }
+
+1.0 
+red 
+6.28 
+red 
+3.14 
+1.0 red
+
+*/
+
+
+
