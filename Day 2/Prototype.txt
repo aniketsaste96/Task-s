@@ -11,8 +11,10 @@ What is Prototypes?
                    //Property and method definitions
                    
                this.address ={
-			"first":first,
-			"last" : last 
+			"Name":Name,
+			"street" :street,
+			"zip" : zip code;
+			 
 			};
 			this.est =est;
 			this.field =field;
