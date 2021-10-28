@@ -1,0 +1,47 @@
+What is Prototypes?
+>Prototype is an object that is associated with every functions and objects by deafault in JS, where function's prototype property is accessible and
+	modifiable and obkect's prototype property (Attributes) is not visible.
+>Prototypes comes handy when we wants to add new properties at any stage to a functions & Objects which will be shared across all instances.
+>Are mechanisms by which Javascript object inherit features from one another.
+>Javascript often describes as a prototype based language-To provide inheritance,Objects can have 
+	a prototype object,which acts as a template object that it inherits methods and properties from.
+>Example =
+		function Guvi(name,est,address,field){
+                
+                   //Property and method definitions
+                   
+               this.address ={
+			"first":first,
+			"last" : last 
+			};
+			this.est =est;
+			this.field =field;
+			};
+
+                 }
+
+
+       object Instance like
+    let company = new Guvi("Prakash sir & others","2014","Chennai","IT skills"};
+
+if you type "company." into console,you should see the browser try to auto-complete this with the member names available
+on this project like-
+
+     company.
+	    .__defineGetter__
+            .__defineGetter__
+	    .__proto__
+               ....etc
+in such list the members defined on company's constructor __company()-name,est,founder,field ect.Youwill however also see some other members
+__like toString,valueOf etc--these aredefined on company's prototype object's,which is __ Object,prototype
+
+
+>What if we call a method on company. whcih is actually defined Object.prototype
+   company.valueOf() Here what happens is browser checks if the company's prototype object has a valueOf() method availabkle
+   on it.If doesn't then browser checks company. prototype object, and it has so the method is called upon.
+
+>Prototype Property = Where inheritance members are defined.
+
+>Modifying prototypes = Methods added to prototype are available on all instances created from the constructor.
+
+	
