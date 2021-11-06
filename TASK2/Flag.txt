@@ -1,5 +1,5 @@
-Use the rest countries API url -> https://restcountries.eu/rest/v2/all and display all the country flags in console
-----------------------------------------------------------
+*/Use the rest countries API url -> https://restcountries.eu/rest/v2/all and display all the country flags in console
+----------------------------------------------------------*/
 
 ///Set up Http Request
 var xhr = new XMLHttpRequest();
@@ -32,7 +32,7 @@ for(var i =0;i<t.length;i++){
 };
 
 xhr.send();
-------------------------------------------
+/*------------------------------------------
 name:Malaysia
   flag:🇲🇾
 
@@ -57,4 +57,4 @@ name:Malaysia
 etc
 
 
-
+*/

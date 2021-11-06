@@ -1,6 +1,6 @@
-Use the same rest countries and print all countries name, region, sub region and population
+/*Use the same rest countries and print all countries name, region, sub region and population
 
---------------------------------------------------------
+--------------------------------------------------------*/
 
 ///Set up Http Request
 var xhr = new XMLHttpRequest();
@@ -21,10 +21,6 @@ for(var i =0;i<t.length;i++){
   region:${t[i].region}
   subregion:${t[i].subregion}
   Population:${t[i].population}
-
-
-
-  
   `);
   
 }
@@ -38,7 +34,7 @@ for(var i =0;i<t.length;i++){
 
 xhr.send();
 
--------------------------------------------------------------------------------
+/*-------------------------------------------------------------------------------
   name:Malaysia
   region:Asia
   subregion:South-Eastern Asia
@@ -64,4 +60,4 @@ xhr.send();
   subregion:Central Asia
   Population:9537642
 
-.....................etc
+.....................etc*/

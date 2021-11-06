@@ -1,3 +1,5 @@
+//how does the browser actually render a website?
+
 User Interaface(UI) = Everything we see but can't manipulate it. Is the point at which user interact with a website or application.
 Browser Engine = Work as mediator between UI and rendering engine.
 Rendering Engine = Parse the CSS + HTML +JavaScript.
