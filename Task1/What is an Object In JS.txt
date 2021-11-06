@@ -14,3 +14,56 @@ Object and properties :-
 	>A js has properties associted with it.
 	>You can access properties with simple dot(.) notation.
 	>Eg ObjecName.propertieyName
+creating object in JavaScript:
+	1.With Object literal:-	
+		It is done by simply defining the property and value inside curly braces like
+		let Bike = {Name:"R15",Maker:"Yamaha",Engine:"150cc".
+		
+	2.With Constructor:-
+		Consturctor is nopthing but a function and with help of new Keyword,which allows
+		go create multiple objects of same flavour as shown.
+		
+		function Ride(name,maker){
+			this.name = name;
+			this.maker = maker;
+			}
+		let bike1 = new Ride ("Bullet","Royal Enfiled");	
+		let bike2 = new Ride("Pulser","Bajaj");
+		console.log(bike1.name); // Bullet
+		console.log(bike2.name); // Pulser
+	
+	3.Using Js New Keyword:-
+		Eg.
+		var person = new Object();
+		person.firstName ="John";
+		person.lastName ="Doe";
+		person.age =30;
+		person.height =5.8;
+
+	4.Using the obJect.create Method:-
+		This is very useful,because it allows you to choose the prototype object for
+		the object you want to create,without having to define a constructor function.
+		
+		//Animal properties and method encapsulation
+		var Animal = {
+			type:"Invertebrates",
+			disType:function(){
+			console.log(this.type);}
+		};
+		
+		//Create new animal type called animal1
+		var animal = object.create(Animal);
+		animal1.disType();  //o/p = Invertebrates.
+		
+		//Create new animal type called fishes
+
+		var dog = object.create(Animal);
+		dog.object ="dogs";
+		dog.displayType();
+		
+		//Output dogs
+
+	
+		
+			
+		
