@@ -205,33 +205,7 @@ palindrome();
     palindrome();
 
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//output Array(5) [ "NITIN", "reviver", "pineenip", "refer", "radar" ]
 
 
 
