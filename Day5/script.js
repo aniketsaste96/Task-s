@@ -208,9 +208,54 @@ palindrome();
 
 
 
+// 6.Return median of two sorted arrays of same size
+
+let median = function (Array) {
+
+    var Array = Array.sort((a, b) => a - b);
+    if (Array.length % 2 !== 0) {
+        return Array[Math.floor(Array.length / 2)];
+    } else {
+
+        let num1 = Array[Array.length / 2];
+        let num2 = Array[Array.length / 2 - 1];
+        return (num1 + num2) / 2;
+    }
 
 
+}
 
+let arr1 = [9, 6, 8, 4, 8, 95]
+let arr2 = [1, 2, 3, 5, 3, 2];
+const Array = [...arr1, ...arr2];
+
+console.log(median(Array));
+
+//Output>> 4.5 we can floor or ceil if required.
+
+
+(function () {
+    let median = function (Array) {
+
+        var Array = Array.sort((a, b) => a - b);
+        if (Array.length % 2 !== 0) {
+            return Array[Math.floor(Array.length / 2)];
+        } else {
+
+            let num1 = Array[Array.length / 2];
+            let num2 = Array[Array.length / 2 - 1];
+            return (num1 + num2) / 2;
+        }
+
+
+    }
+
+    let arr1 = [9, 6, 8, 4, 8, 95]
+    let arr2 = [1, 2, 3, 5, 3, 2];
+    const Array = [...arr1, ...arr2];
+
+    console.log(median(Array));
+})();
 
 
 
