@@ -261,27 +261,6 @@ console.log(median(Array));
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Remove duplicates from an array
 /*Taken var = data from above..*/
 
