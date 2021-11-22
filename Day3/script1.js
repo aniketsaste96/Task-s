@@ -9,7 +9,7 @@ let Name = [
         "Graduation Year": 2016,
         "workExperiance": "1year",
         "Designation": "Quality Engineer",
-        "other Works involve in": "Trader,LLP at BESEA.pvt.lt",
+        "other Works involve in": "Trader,LLP at BESEA.pvt.ltd",
         "Hobbies": "'listening podcast','watching Documentaries'",
         "sports": "Vollyball",
 
