@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*Do the below programs in arrow functions
 1.Print odd numbers in an array
 2.Convert all the strings to title caps in a string array
@@ -247,5 +247,5 @@ let palindrome = () => {
 }
 palindrome();
 
->>>>>>> daeb88688d36940d60f8b8f618886ad272d1e995
+
 //output Array(5) [ "NITIN", "reviver", "pineenip", "refer", "radar" ]
