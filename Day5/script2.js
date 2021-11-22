@@ -11,17 +11,6 @@
 var Array = [10, 14, 56, 1, 2, 4, 5, 6, 7, 2, 5, 8, 21, 5, 7];
 /*i am using this Array in below programme also*/
 
-
-
-/*
-hello = function() {
-    return "Hello World!";
-  } 
-  hello = () => {
-    return "Hello World!";
-  } 
-  */
-
 var odd = () => {
     let odds = [];
     for (let i = 0; i < Array.length; i++) {
