@@ -1,0 +1,105 @@
+//Print the following details name, capital, flag using forEach function
+
+
+
+
+///Set up Http Request
+var xhr = new XMLHttpRequest();
+
+//create and send Get request
+//GET,POST,PUT,DELETE,
+// Second =>ENdpoint of the url:server url
+xhr.open("GET", "https://restcountries.com/v3.1/all");
+// set up our listener to process the request
+xhr.onload = function () {
+    //process the request and server will return the data
+    if (xhr.status >= 200 && xhr.status < 300) {
+        var t = JSON.parse(this.response);
+        //  console.log(t)
+        t.forEach((elem) => {
+            console.log(`
+            name:${elem.name.common}
+            flag:${elem.flag}
+            Capital:${elem.capital}
+          
+            
+            `);
+        })
+
+
+
+
+
+
+    }
+};
+
+xhr.send();
+
+
+
+
+/*
+
+                        OUTPUT
+
+                          name:Afghanistan
+            flag:🇦🇫
+            Capital:Kabul
+          
+            
+            script.js:15:21
+
+            name:Sudan
+            flag:🇸🇩
+            Capital:Khartoum
+          
+            
+            script.js:15:21
+
+            name:Burundi
+            flag:🇧🇮
+            Capital:Gitega
+          
+            
+            script.js:15:21
+
+            name:Mexico
+            flag:🇲🇽
+            Capital:Mexico City
+          
+            
+            script.js:15:21
+
+            name:Cuba
+            flag:🇨🇺
+            Capital:Havana
+          
+            
+            script.js:15:21
+
+            name:Serbia
+            flag:🇷🇸
+            Capital:Belgrade
+          
+            
+            script.js:15:21
+
+            name:Monaco
+            flag:🇲🇨
+            Capital:Monaco
+          
+            
+            script.js:15:21
+
+            name:Bhutan
+            flag:🇧🇹
+            Capital:Thimphu
+          
+            
+            script.js:15:21
+
+            name:Guyana
+            flag:🇬🇾
+            Capital:Georgetown
+*/
