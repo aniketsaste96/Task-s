@@ -1,46 +1,202 @@
-Get all the countries from Asia continent /region using Filter function
+//Get all the countries from Asia continent /region using Filter function
 
 
-
-
-
-///Set up Http Request
 var xhr = new XMLHttpRequest();
 
-//create and send Get request
-//GET,POST,PUT,DELETE,
-// Second =>ENdpoint of the url:server url
+
 xhr.open("GET", "https://restcountries.com/v3.1/all");
 // set up our listener to process the request
 xhr.onload = function () {
-  //process the request and server will return the data
-  if (xhr.status >= 200 && xhr.status < 300) {
-    var t = JSON.parse(this.response);
-      // console.log(t)
-// for(var i =0;i<t.length;i++){
-//   console.log( `
-//   name:${t[i].name.common}
-//   region:${t[i].region}
-//   subregion:${t[i].subregion}
-//   Population:${t[i].population}
+    //process the request and server will return the data
+    if (xhr.status >= 200 && xhr.status < 300) {
+        var t = JSON.parse(this.response);
+       
+        let AsiaRegion = t.filter(function (el) {
+            return el.region == "Asia"
 
-//   `);
-  
-// }
-   let newFlag = t.filter(function(el)
-   {return el.region == "Asia"
+        });
+        console.log(AsiaRegion);
 
-   });
-   console.log(newFlag);
- 
-    //it should not give you data
-    // console.log("Data is not available");
-    
-  }
+   
+
+    }
 };
 
 xhr.send();
-
-
-
+/*
+                                                  OUTPUT
+                                   
+                                   
+                                   
+                                   
+0: Object { cca2: "AF", ccn3: "004", cca3: "AFG", … }
+​​
+altSpellings: Array [ "AF", "Afġānistān" ]
+​​
+area: 652230
+​​
+borders: Array(6) [ "IRN", "PAK", "TKM", … ]
+​​
+capital: Array [ "Kabul" ]
+​​
+capitalInfo: Object { latlng: (2) […] }
+​​
+car: Object { signs: (1) […], side: "right" }
+​​
+cca2: "AF"
+​​
+cca3: "AFG"
+​​
+ccn3: "004"
+​​
+cioc: "AFG"
+​​
+coatOfArms: Object { png: "https://mainfacts.com/media/images/coats_of_arms/af.png", svg: "https://mainfacts.com/media/images/coats_of_arms/af.svg" }
+​​
+continents: Array [ "Asia" ]
+​​
+currencies: Object { AFN: {…} }
+​​
+demonyms: Object { eng: {…}, fra: {…} }
+​​
+fifa: "AFG"
+​​
+flag: "🇦🇫"
+​​
+flags: Object { png: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_the_Taliban.svg/320px-Flag_of_the_Taliban.svg.png", svg: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg" }
+​​
+idd: Object { root: "+9", suffixes: (1) […] }
+​​
+independent: true
+​​
+landlocked: true
+​​
+languages: Object { prs: "Dari", pus: "Pashto", tuk: "Turkmen" }
+​​
+latlng: Array [ 33, 65 ]
+​​
+maps: Object { googleMaps: "https://goo.gl/maps/BXBGw7yUUFknCfva9", openStreetMaps: "https://www.openstreetmap.org/relation/303427" }
+​​
+name: Object { common: "Afghanistan", official: "Islamic Republic of Afghanistan", nativeName: {…} }
+​​
+population: 2837743
+​​
+region: "Asia"
+​​
+startOfWeek: "monday"
+​​
+status: "officially-assigned"
+​​
+subregion: "Southern Asia"
+​​
+timezones: Array [ "UTC+04:30" ]
+​​
+tld: Array [ ".af" ]
+​​
+translations: Object { ara: {…}, ces: {…}, cym: {…}, … }
+​​
+unMember: true
+​​
+<prototype>: Object { … }
+​
+1: Object { cca2: "BT", ccn3: "064", cca3: "BTN", … }
+​
+2: Object { cca2: "BN", ccn3: "096", cca3: "BRN", … }
+​
+3: Object { cca2: "PK", ccn3: "586", cca3: "PAK", … }
+​
+4: Object { cca2: "AZ", ccn3: "031", cca3: "AZE", … }
+​
+5: Object { cca2: "TR", ccn3: "792", cca3: "TUR", … }
+​
+6: Object { cca2: "TW", ccn3: "158", cca3: "TWN", … }
+​
+7: Object { cca2: "HK", ccn3: "344", cca3: "HKG", … }
+​
+8: Object { cca2: "MN", ccn3: "496", cca3: "MNG", … }
+​
+9: Object { cca2: "YE", ccn3: "887", cca3: "YEM", … }
+​
+10: Object { cca2: "LB", ccn3: "422", cca3: "LBN", … }
+​
+11: Object { cca2: "VN", ccn3: "704", cca3: "VNM", … }
+​
+12: Object { cca2: "IL", ccn3: "376", cca3: "ISR", … }
+​
+13: Object { cca2: "SG", ccn3: "702", cca3: "SGP", … }
+​
+14: Object { cca2: "SA", ccn3: "682", cca3: "SAU", … }
+​
+15: Object { cca2: "IN", ccn3: "356", cca3: "IND", … }
+​
+16: Object { cca2: "ID", ccn3: "360", cca3: "IDN", … }
+​
+17: Object { cca2: "TJ", ccn3: "762", cca3: "TJK", … }
+​
+18: Object { cca2: "QA", ccn3: "634", cca3: "QAT", … }
+​
+19: Object { cca2: "CN", ccn3: "156", cca3: "CHN", … }
+​
+20: Object { cca2: "UZ", ccn3: "860", cca3: "UZB", … }
+​
+21: Object { cca2: "OM", ccn3: "512", cca3: "OMN", … }
+​
+22: Object { cca2: "BH", ccn3: "048", cca3: "BHR", … }
+​
+23: Object { cca2: "JP", ccn3: "392", cca3: "JPN", … }
+​
+24: Object { cca2: "IQ", ccn3: "368", cca3: "IRQ", … }
+​
+25: Object { cca2: "MM", ccn3: "104", cca3: "MMR", … }
+​
+26: Object { cca2: "PH", ccn3: "608", cca3: "PHL", … }
+​
+27: Object { cca2: "IR", ccn3: "364", cca3: "IRN", … }
+​
+28: Object { cca2: "LA", ccn3: "418", cca3: "LAO", … }
+​
+29: Object { cca2: "BD", ccn3: "050", cca3: "BGD", … }
+​
+30: Object { cca2: "KW", ccn3: "414", cca3: "KWT", … }
+​
+31: Object { cca2: "LK", ccn3: "144", cca3: "LKA", … }
+​
+32: Object { cca2: "MO", ccn3: "446", cca3: "MAC", … }
+​
+33: Object { cca2: "SY", ccn3: "760", cca3: "SYR", … }
+​
+34: Object { cca2: "MY", ccn3: "458", cca3: "MYS", … }
+​
+35: Object { cca2: "KP", ccn3: "408", cca3: "PRK", … }
+​
+36: Object { cca2: "PS", ccn3: "275", cca3: "PSE", … }
+​
+37: Object { cca2: "KH", ccn3: "116", cca3: "KHM", … }
+​
+38: Object { cca2: "AE", ccn3: "784", cca3: "ARE", … }
+​
+39: Object { cca2: "KR", ccn3: "410", cca3: "KOR", … }
+​
+40: Object { cca2: "KG", ccn3: "417", cca3: "KGZ", … }
+​
+41: Object { cca2: "TL", ccn3: "626", cca3: "TLS", … }
+​
+42: Object { cca2: "JO", ccn3: "400", cca3: "JOR", … }
+​
+43: Object { cca2: "KZ", ccn3: "398", cca3: "KAZ", … }
+​
+44: Object { cca2: "TH", ccn3: "764", cca3: "THA", … }
+​
+45: Object { cca2: "GE", ccn3: "268", cca3: "GEO", … }
+​
+46: Object { cca2: "AM", ccn3: "051", cca3: "ARM", … }
+​
+47: Object { cca2: "TM", ccn3: "795", cca3: "TKM", … }
+​
+48: Object { cca2: "NP", ccn3: "524", cca3: "NPL", … }
+​
+49: Object { cca2: "MV", ccn3: "462", cca3: "MDV", … }
+​
+length: 50
+*/
 
