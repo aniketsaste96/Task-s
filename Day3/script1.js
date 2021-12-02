@@ -2,16 +2,32 @@
 
 let Name = [
     {
-        "Name": "Aniket Krishna Saste",
-        "Education": "Bachelor in Engineering",
-        "UniversityName": "shivaji University,Kolhapur",
-        "Furthur Education": "Student of SIAC Mumbai 2018-2020",
-        "Graduation Year": 2016,
-        "workExperiance": "1year",
-        "Designation": "Quality Engineer",
-        "other Works involve in": "Trader,LLP at BESEA.pvt.ltd",
-        "Hobbies": "'listening podcast','watching Documentaries'",
-        "sports": "Vollyball",
+        "Name":
+        {
+            "firstname":"Aniket",
+            "lastname":"Saste",
+        }
+        "Education":
+        {
+             "Schooling":"Vyankatrao Highschool,Ichalkranji",
+              "Graduation":"Mechanical Engineering,Shivaji University Kolhapur",
+                "Passout Year": 2016
+                "Other":"Student of SIAC Mumbai 2018-2020", 
+          }
+          
+         "Work":
+        {
+              "Designation":"Quality Engineer",
+               "Year of Experiance":1,
+                 "other Works involve in": "Trader,LLP at BESEA.pvt.ltd",
+          }
+        
+        "Hobbies":["listening podcast","watching Documentaries"]
+             
+        
+        "sports": {
+            "Vollyball"
+        }
 
 
 
