@@ -1,31 +1,48 @@
 //a) Write a constructor for the class Movie, which takes a String representing the title of the movie, a String representing the studio, and a String representing the rating as its arguments, and sets the respective class properties to these values.
 
 class Movie {
-    constructor(title, studio, rating) {
+    //Default rating when no rating provided
+    constructor(title, studio, rating = "PG") {
         this.title = title;
-        this.studio = studio;
+        this.studio = studio
         this.rating = rating;
+
+
     }
-
-    getPg() {
-
-        if (this.rating === 'PG') {
-            return `${this.title} ${this.studio} ${this.rating}`;
-        }
-
-
+    //Get only those movies with rating PG
+    getPG(moviesinstances) {
+        return moviesinstances.filter((x) => x.rating == "PG")
     }
 }
 
-Movies = new Movie('Casino Royale', 'Eon Productions', 'PG­');
-
-/* 
-, new Movie('DDLJ', 'YRF', 'PG')];
-new Movie('FreeGuy', 'Disney', 'PG')
-new Movie('Whitehousedown', 'xyz', 'PG14')
-new Movie('2012', 'MARVAL', 'PG') */
 
 
 
+let film1 = new Movie("Casino Royale", "Eon Productions", "PG­13")
 
-console.log(Movies.getPg());
+//Instances
+let mov1 = new Movie("FreeGuy", "Disney", "PG")
+let mov2 = new Movie("WWZ", "SONY", "PG")
+let mov3 = new Movie("Act of Valour", "KingsCinema", "R")
+let moviesinstances = [mov1, mov2, mov3];
+let arr = new Movie(moviesinstances);
+
+//get movies with only rating PG
+console.log(arr.getPG(moviesinstances))
+
+
+//OUTPUT
+/*
+Array [ {…}, {…} ]
+​
+0: Object { title: "FreeGuy", studio: "Disney", rating: "PG" }
+​
+1: Object { title: "WWZ", studio: "SONY", rating: "PG" }
+​
+length: 2
+*/
+
+
+
+
+
